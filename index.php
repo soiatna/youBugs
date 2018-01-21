@@ -7,4 +7,11 @@
  */
 ?>
 
-<script src = "js/learnJS.js"></script>
+<html>
+<head></head>
+
+<body>
+
+</body>
+</html>
+<script src="js/learnJS.js"></script>
