@@ -57,7 +57,7 @@ for (var x = 0; x < 8; x++) {
             } else {
                 numberColorCell = colorCell[1];
             }
-            cheesCell[x][y] = [cheesLetter[x], cheesNumber[y], numberColorCell, cheesFigure [0]];
+            cheesCell[x][y] = {word: cheesLetter[x], number: cheesNumber[y], color: numberColorCell, figure: cheesFigure [0]};
             }
         }
 console.log(cheesCell);
