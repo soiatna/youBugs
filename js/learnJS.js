@@ -50,12 +50,12 @@ for (var x = 0; x < 8; x++) {
         cheesCell[x]=[];
 
         for (var y = 0; y < 8; y++) {
-            if(x % 2 == 0 && y % 2 !== 0) {
-                numberColorCell = colorCell[0];
-            } else if (x % 2 !== 0 && y % 2 == 0) {
-                numberColorCell = colorCell[0];
-            } else {
+            if(x % 2 !== 0 && y % 2 == 0) {
                 numberColorCell = colorCell[1];
+            } else if (x % 2 == 0 && y % 2 !== 0) {
+                numberColorCell = colorCell[1];
+            } else {
+                numberColorCell = colorCell[0];
             }
             cheesCell[x][y] = {word: cheesLetter[x], number: cheesNumber[y], color: numberColorCell, figure: cheesFigure [0]};
             }
