@@ -1,3 +1,4 @@
+//Вариант №1
 var tableBody = '',
     tdCellsBlack = '',
     tdCellsWhite = '',
@@ -37,6 +38,7 @@ for (i = 1; i < 9; i++) {
 $('body').append ('<table></table>');
 $('table').append(tableBody);
 
+//Вариант №2
 var colorCell = ["black", "white"],
     cheesLetter = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'],
     cheesNumber = ['1', '2', '3', '4', '5', '6', '7', '8'],
@@ -57,7 +59,11 @@ for (var x = 0; x < 8; x++) {
             } else {
                 numberColorCell = colorCell[0];
             }
-            cheesCell[x][y] = {word: cheesLetter[x], number: cheesNumber[y], color: numberColorCell, figure: cheesFigure [0]};
-            }
+                cheesCell[x][y] = {
+                    word: cheesLetter[x],
+                    number: cheesNumber[y],
+                    color: numberColorCell,
+                    figure: cheesFigure [0]};
+                }
         }
 console.log(cheesCell);
